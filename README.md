@@ -4,7 +4,9 @@
 # npm install
 # npm install puppeteer
 # npm install mongodb
+# npm install dotenv
 #
+
 
 # Getting Started with Create React App
 
