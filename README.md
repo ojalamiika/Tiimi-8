@@ -1,3 +1,10 @@
+# Create folder my-app
+# cd my-app
+# git pull https://github.com/ojalamiika/Tiimi-8.git
+# npx create-react-app my-app
+# npm install
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
