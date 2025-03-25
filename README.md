@@ -1,3 +1,13 @@
+# npx create-react-app my-app
+# cd my-app
+# git pull https://github.com/ojalamiika/Tiimi-8.git
+# npm install
+# npm install puppeteer
+# npm install mongodb
+# npm install dotenv
+#
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
