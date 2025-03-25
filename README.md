@@ -3,7 +3,8 @@
 # git pull https://github.com/ojalamiika/Tiimi-8.git
 # npm install
 # npm install puppeteer
-# 
+# npm install mongodb
+#
 
 # Getting Started with Create React App
 
