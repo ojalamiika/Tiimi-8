@@ -2,7 +2,8 @@
 # cd my-app
 # git pull https://github.com/ojalamiika/Tiimi-8.git
 # npm install
-
+# npm install puppeteer
+# 
 
 # Getting Started with Create React App
 
