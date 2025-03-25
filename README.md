@@ -1,7 +1,6 @@
-# Create folder my-app
+# npx create-react-app my-app
 # cd my-app
 # git pull https://github.com/ojalamiika/Tiimi-8.git
-# npx create-react-app my-app
 # npm install
 
 
