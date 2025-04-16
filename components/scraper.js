@@ -19,7 +19,7 @@ async function scrapeData() {
         scrollAttempts++;
 
         // Scroll down
-        await page.evaluate(() => window.scrollBy(0, window.innerHeight * 2));
+        await page.evaluate(() => window.scrollBy(0, window.innerHeight * 1.5));
         await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for content to load
 
         // Count loaded events
@@ -34,7 +34,7 @@ async function scrapeData() {
     }
 
     // Extract titles and locations
-    data = await page.evaluate(() => {
+    const data = await page.evaluate(() => {
         const results = [];
         const productCards = document.querySelectorAll('o-product-card');
 
