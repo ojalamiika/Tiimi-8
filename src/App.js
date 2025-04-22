@@ -1,31 +1,41 @@
 import logo from './logo.svg';
 import './App.css';
+import { Calendar, momentLocalizer } from 'react-big-calendar';
+import moment from 'moment';
+import 'react-big-calendar/lib/css/react-big-calendar.css';
+
+// Set up localizer
+const localizer = momentLocalizer(moment);
+
+// Sample events
+const events = [
+  {
+    title: 'Meeting',
+    start: new Date(2025, 3, 22, 10, 0), // April 22, 2025, 10:00
+    end: new Date(2025, 3, 22, 11, 0),
+  },
+];
+
+function MyCalendar() {
+  return (
+    <div style={{ height: 500 }}>
+      <Calendar
+        localizer={localizer}
+        events={events}
+        startAccessor="start"
+        endAccessor="end"
+        style={{ height: '100%' }}
+      />
+    </div>
+  );
+}
 
 function App() {
-
-  require('dotenv').config();
-
-  const mongoose = require('mongoose');
-
-  mongoose.connect(process.env.MONGO_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-  })
-  .then(() => {
-      console.log('Connected to MongoDB');
-  })
-  .catch((error) => {
-      console.error('Error connecting to MongoDB:', error);
-  });
-  
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          Hello
-        </h1>
+        <MyCalendar></MyCalendar>
       </header>
     </div>
   );
