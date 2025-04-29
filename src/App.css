@@ -77,4 +77,45 @@ html, body, #root {
   padding: 2px 4px;
   border-radius: 4px;
   font-size: 12px;
+  margin-bottom: 2px; /* Reduce vertical space between events */
 }
+
+
+/* Ensure calendar navigation bar displays correctly */
+.rbc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Optional: space around navigation buttons */
+.rbc-btn-group > button {
+  margin: 0 4px;
+}
+
+/* Make the day numbers bigger and bold */
+.rbc-month-view .rbc-date-cell {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 4px;
+}
+
+/* Make the month/year header (e.g., April 2025) bigger and bold */
+.rbc-toolbar-label {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* Optional: adjust navigation button font size */
+.rbc-toolbar button {
+  font-size: 1rem;
+}
+
+.rbc-event-content {
+  padding: 0;
+  margin: 0;
+  line-height: 1.2; /* Optional: tighter vertical layout */
+}
+
