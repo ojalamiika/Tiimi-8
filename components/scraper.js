@@ -46,7 +46,6 @@ async function scrapeData() {
                 const title = titleElement.innerText.trim();
                 const location = locationElement.innerText.trim();
 
-                // Only include events that have "@" in title or location (even if it's inside a word)
                 if (title.includes('@') || location.includes('@')) {
                     results.push({ title, location });
                 }
@@ -64,5 +63,3 @@ async function scrapeData() {
 
 export default scrapeData()
 
-// Run the scraper
-//scrapeData().catch(console.error);
